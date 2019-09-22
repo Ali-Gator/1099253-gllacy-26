@@ -13,15 +13,14 @@
     </a>
     <nav>
       <ul>
-        <li>Каталог
-          <ul>
-            <li><a href="">Новинки</a></li>
-            <li><a>Сливочное</a></li>
-            <li><a href="">Щербеты</a></li>
-            <li><a href="">Фруктовый лед</a></li>
-            <li><a href="">Мелорин</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Каталог</a></li>
+        <ul>
+          <li><a href="">Новинки</a></li>
+          <li><a>Сливочное</a></li>
+          <li><a href="">Щербеты</a></li>
+          <li><a href="">Фруктовый лед</a></li>
+          <li><a href="">Мелорин</a></li>
+        </ul>
         <li><a href="">Доставка и оплата</a></li>
         <li><a href="">О Компании</a></li>
       </ul>
@@ -43,95 +42,116 @@
       <li><a href="#">Каталог</a></li>
       <li><a>Сливочное</a></li>
     </ul>
+    <form name="catalog's filter">
+      <p>
+        <select id="sort">
+          <option>по популярности</option>
+        </select>
+        <label for="sort">Сортировка:</label>
+        <input type="range" id="price" min="0" max="1000" step="5" multiple>
+        <label for="price">Цена: 100 руб. - 500 руб.</label>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <input type="radio" id="fatchoice1" name="fat" value="1">
+          <label for="fatchoice1">0%</label>
+          <input type="radio" id="fatchoice2" name="fat" value="2" checked>
+          <label for="fatchoice2">до 10%</label>
+          <input type="radio" id="fatchoice3" name="fat" value="3">
+          <label for="fatchoice3">до 30%</label>
+          <input type="radio" id="fatchoice4" name="fat" value="4">
+          <label for="fatchoice4">выше 30%</label>
+        </fieldset>
+      </p>
+      <p>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <input type="checkbox" id="ingredient1" name="option1" value="1" checked>
+          <label for="ingredient1">шоколадные</label>
+          <input type="checkbox" id="ingredient2" name="option2" value="2" checked>
+          <label for="ingredient2">сахарные присыпки</label>
+          <input type="checkbox" id="ingredient3" name="option3" value="3">
+          <label for="ingredient3">фрукты</label>
+          <input type="checkbox" id="ingredient4" name="option4" value="4">
+          <label for="ingredient4">сиропы</label>
+          <input type="checkbox" id="ingredient5" name="option5" value="5">
+          <label for="ingredient5">джемы</label>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </p>
+    </form>
     <section>
       <h2>Ассортимент мороженого</h2>
       <ul>
         <li>
-
           <img src="img/1.png" alt="Мороженое 1">
-
           <p>310 ₽<span>/кг</span></p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
         <li>
-
           <img src="img/2.png" alt="Мороженое 2">
-
           <p>380 ₽<span>/кг</span></p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li>
-
           <img src="img/3.png" alt="Мороженое 3">
-
           <p>355 ₽<span>/кг</span></p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
         <li>
-
           <img src="img/4.png" alt="Мороженое 4">
-
           <p>415 ₽<span>/кг</span></p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </li>
         <li>
-
           <img src="img/5.png" alt="Мороженое 5">
-
           <p>325 ₽<span>/кг</span></p>
           <a href="#">Сливочное с брусничным джемом</a>
         </li>
         <li>
-
           <img src="img/6.png" alt="Мороженое 6">
-
           <p>410 ₽<span>/кг</span></p>
           <a href="#">Сливочно-черничное с цельными ягодами черники</a>
         </li>
         <li>
-
           <img src="img/7.png" alt="Мороженое 7">
-
           <p>375 ₽<span>/кг</span></p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
         </li>
         <li>
-
           <img src="img/8.png" alt="Мороженое 8">
-
           <p>320 ₽<span>/кг</span></p>
           <a href="#">Сливочное с шоколадной стружкой</a>
         </li>
         <li>
-
           <img src="img/9.png" alt="Мороженое 9">
-
           <p>440 ₽<span>/кг</span></p>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
         </li>
         <li>
-
           <img src="img/10.png" alt="Мороженое 10">
-
           <p>435 ₽<span>/кг</span></p>
           <a href="#">Сливочноe с ментоловым сиропом</a>
         </li>
         <li>
-
           <img src="img/11.png" alt="Мороженое 11">
-
           <p>355 ₽<span>/кг</span></p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
         </li>
         <li>
-
           <img src="img/12.png" alt="Мороженое 12">
-
           <p>420 ₽<span>/кг</span></p>
           <a href="#">Сливочное с мятным сиропом</a>
         </li>
       </ul>
     </section>
+    <ul>
+      <li><a>1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">></a></li>
+    </ul>
   </main>
   <footer>
     <ul>
