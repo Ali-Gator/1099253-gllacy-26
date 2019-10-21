@@ -26,7 +26,7 @@
     </nav>
     <button type="button">Поиск</button>
     <a href="#">Вход</a>
-    <a href="#">Корзина</a>
+    <a href="#">Пусто</a>
     <p>
       С 10 до 20, ежедневно<br>
       <span>
@@ -35,7 +35,7 @@
     </p>
   </header>
   <main>
-    <h1>Магазин Глэйси: мороженое собственного производства</h1>
+    <h1 class="visually-hidden">Магазин Глэйси: мороженое собственного производства</h1>
     <ul>
       <li>
         <img src="img/icecream1.png" width="1045" height="881" alt="Рожки мороженое 1">
@@ -53,26 +53,28 @@
         <a href="#">Давайте оба!</a>
       </li>
     </ul>
-    <div>
-      <button type="button"></button>
-      <button type="button"></button>
-      <button type="button"></button>
-    </div>
+    <form name="slider" method="POST">
+      <ul>
+        <li><input type="radio" name="slide" value="1" aria-label="Кнопка показа первого слайда" checked></li>
+        <li><input type="radio" name="slide" value="2" aria-label="Кнопка показа второго слайда"></li>
+        <li><input type="radio" name="slide" value="3" aria-label="Кнопка показа третьего слайда"></li>
+      </ul>
+    </form>
     <section>
       <h2>Промо</h2>
       <div>
         <p>Малинка даром!</p>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="">Хочу варенье!</a>
+        <a href="#">Хочу варенье!</a>
       </div>
       <div>
         <p>Шоколадки даром!</p>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <a href="">Хочу варенье!</a>
+        <a href="#">Хочу шоколадки!</a>
       </div>
     </section>
-    <h2>Хиты продаж</h2>
+    <h2 class="visually-hidden">Хиты продаж</h2>
     <ul>
       <li>
         <img src="img/1.png" width="267" height="267" alt="Мороженое 1">
@@ -114,8 +116,8 @@
       </a>
     </div>
     <section>
-      <h2>Подписка на рассылку</h2>
-      <form name="e-mail request">
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
+      <form name="e-mail request" method="post" aria-label="Форма подписки на рассылку">
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
@@ -125,32 +127,32 @@
       </form>
     </section>
     <section>
-      <h2>Контакты</h2>
+      <h2 class="visually-hidden"> Контакты</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="Карта с адресом">
       <img src="img/pin.svg" width="80" height="140" alt="Указатель адреса">
       <div>
         <p>
           Адрес главного офиса и офлайн-магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
         </p>
-                  <p>
+        <p>
           Для заказов по телефону:<span>8 812 450-25-25</span>(с 10 до 20 ежедневно)
         </p>
-        <a href="">Форма обратной связи</a>
+        <a href="#">Форма обратной связи</a>
       </div>
     </section>
   </main>
   <footer>
     <ul>
-      <li><a href="">Твиттер</a></li>
-      <li><a href="">Инстаграмм</a></li>
-      <li><a href="">Фэйсбук</a></li>
-      <li><a href="">Вконтакте</a></li>
+      <li><a href="#">Твиттер</a></li>
+      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#">Фэйсбук</a></li>
+      <li><a href="#">Вконтакте</a></li>
     </ul>
     <ul>
-      <li><a href="">Для поставщиков</a></li>
-      <li><a href="">О производстве</a></li>
-      <li><a href="">Наши документы</a></li>
-      <li><a href="">Экологические стандарты</a></li>
+      <li><a href="#">Для поставщиков</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -161,6 +163,25 @@
       </p>
     </div>
   </footer>
+  <input type="search" placeholder="Что ищем?" aria-label="Строка поиска по сайту">
+  <div aria-label="Форма входа">
+    <form name="login">
+      <input type="email" placeholder="Электронная почта" aria-label="Электронная почта">
+      <input type="password" placeholder="Пароль" aria-label="Пароль">
+      <button type="submit">Войти</button>
+    </form>
+    <a href="#">Забыли пароль?</a>
+    <a href="#">Новая регистрация</a>
+  </div>
+  <div aria-label="Форма обратной связи">
+    <p>Мы обязательно вам ответим!</p>
+    <form name="send request">
+      <input type="text" placeholder="Как вас зовут?" aria-label="Поле для имени">
+      <input type="email" placeholder="Ваша почта для ответа?" aria-label="Поле для электронной почты">
+      <textarea rows="4" placeholder="Напишите что-нибудь..." aria-label="Поле для комментария"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 
 </html>
