@@ -39,53 +39,53 @@
   <main>
     <h1>Сливочное мороженое</h1>
     <ul>
-      <li><a href="index.html" aria-label="Перейти на главную">Главная</a></li>
-      <li><a href="#" aria-label="Перейти в общий каталог">Каталог</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
       <li><a>Сливочное</a></li>
     </ul>
-    <form name="catalog's filter" aria-label="Поля фильтров и сортировок">
+    <form name="catalog's filter">
       <p>
         <select id="sort" size="4" name="Sort_list">
-          <option value="by_popular" aria-label="По популярности" selected>по популярности</option>
-          <option value="cheap_first" aria-label="Сначала недорогие">сначала недорогие</option>
-          <option value="expensive_first" aria-label="Сначала дорогие">сначала дорогие</option>
-          <option value="by_fat" aria-label="По жирности">по жирности</option>
+          <option value="by_popular" selected>по популярности</option>
+          <option value="cheap_first">сначала недорогие</option>
+          <option value="expensive_first">сначала дорогие</option>
+          <option value="by_fat">по жирности</option>
         </select>
         <label for="sort">Сортировка:</label>
-        <input type="range" id="price" min="0" max="700" step="5" aria-label="Фильтр по цене">
+        <input type="range" id="price" min="0" max="700" step="5">
         <label for="price">Цена: 100 руб. - 500 руб.</label>
         <fieldset>
-          <legend aria-label="Выбор жирности">Жирность:</legend>
+          <legend>Жирность:</legend>
           <ul>
-            <li> <input type="radio" id="fatchoice1" name="fat" value="1" aria-label="0%">
+            <li> <input type="radio" id="fatchoice1" name="fat" value="1">
               <label for="fatchoice1">0%</label></li>
-            <li> <input type="radio" id="fatchoice2" name="fat" value="2" aria-label="до 10%" checked>
+            <li> <input type="radio" id="fatchoice2" name="fat" value="2" checked>
               <label for="fatchoice2">до 10%</label></li>
-            <li> <input type="radio" id="fatchoice3" name="fat" value="3" aria-label="до 30%">
+            <li> <input type="radio" id="fatchoice3" name="fat" value="3">
               <label for="fatchoice3">до 30%</label></li>
-            <li> <input type="radio" id="fatchoice4" name="fat" value="4" aria-label="выше 30%">
+            <li> <input type="radio" id="fatchoice4" name="fat" value="4">
               <label for="fatchoice4">выше 30%</label></li>
           </ul>
         </fieldset>
       </p>
       <p>
         <fieldset>
-          <legend aria-label="Выбор наполнителей">Наполнители:</legend>
+          <legend>Наполнители:</legend>
           <ul>
             <li>
-              <input type="checkbox" id="ingredient1" name="option1" value="1" aria-label="Шоколадные" checked>
+              <input type="checkbox" id="ingredient1" name="option1" value="1" checked>
               <label for="ingredient1">шоколадные</label></li>
-            <li><input type="checkbox" id="ingredient2" name="option2" value="2" aria-label="Сахарные присыпки" checked>
+            <li><input type="checkbox" id="ingredient2" name="option2" value="2" checked>
               <label for="ingredient2">сахарные присыпки</label></li>
-            <li> <input type="checkbox" id="ingredient3" name="option3" value="3" aria-label="Фрукты">
+            <li> <input type="checkbox" id="ingredient3" name="option3" value="3">
               <label for="ingredient3">фрукты</label></li>
-            <li> <input type="checkbox" id="ingredient4" name="option4" value="4" aria-label="Сиропы">
+            <li> <input type="checkbox" id="ingredient4" name="option4" value="4">
               <label for="ingredient4">сиропы</label></li>
-            <li> <input type="checkbox" id="ingredient5" name="option5" value="5" aria-label="Джемы">
+            <li> <input type="checkbox" id="ingredient5" name="option5" value="5">
               <label for="ingredient5">джемы</label></li>
           </ul>
         </fieldset>
-        <button type="submit" aria-label="Применить">Применить</button>
+        <button type="submit">Применить</button>
       </p>
     </form>
     <section>
@@ -182,21 +182,21 @@
       <li><a href="#" aria-label="Глейси во Вконтакте">Вконтакте</a></li>
     </ul>
     <ul>
-      <li><a href="#" aria-label="Информация для поставщиков">Для поставщиков</a></li>
-      <li><a href="#" aria-label="Информация о производстве">О производстве</a></li>
-      <li><a href="#" aria-label="Ознакомиться с нашими докуменатми">Наши документы</a></li>
-      <li><a href="#" aria-label="Посмотреть экологические стандарты">Экологические стандарты</a></li>
+      <li><a href="#"</a></li>
+      <li><a href="#"</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип Html Academy">
       </a>
       <p>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт HTML Academy">HTML Academy</a> © 2019
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </div>
   </footer>
-  <form name="Basket" method="POST">
+  <form name="basket" method="post">
     <table>
       <tr>
         <td><button type="button" aria-label="Удалить позицию"></button></td>
@@ -214,7 +214,7 @@
         </tr>
     </table>
     <p>Итого: 750 руб.</p>
-    <button type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+    <button type="submit"></button>
   </form>
 </body>
 </html>
